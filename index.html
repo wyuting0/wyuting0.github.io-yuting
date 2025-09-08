@@ -2,35 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=375, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <title>Yuting</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    html, body {
       margin: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      padding: 0;
+      height: 100%;
       background: #000;
       color: #fff;
       font-family: 'Inter', sans-serif;
       text-align: center;
-      padding: 0 16px;
-      overflow-x: hidden;
+      overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     h1 {
       font-weight: 300;
-      font-size: clamp(28px, 8vw, 56px);
+      font-size: 56px;
       margin: 0;
     }
 
     p.subtitle {
       margin: 12px 0 36px;
-      font-size: clamp(14px, 4vw, 18px);
+      font-size: 16px;
       font-weight: 300;
     }
 
@@ -46,7 +49,6 @@
 
     .links {
       display: flex;
-      flex-wrap: wrap;
       gap: 16px;
       justify-content: center;
       align-items: center;
@@ -55,11 +57,11 @@
     .links a {
       color: #fff;
       text-decoration: none;
-      padding: clamp(12px, 4vw, 20px) clamp(24px, 6vw, 40px);
+      padding: 12px 24px;
       border: 1px solid rgba(255,255,255,0.2);
-      border-radius: clamp(6px, 2vw, 12px);
+      border-radius: 12px;
       font-weight: 500;
-      font-size: clamp(14px, 4vw, 18px);
+      font-size: 16px;
       transition: all 0.2s ease;
     }
 
