@@ -9,7 +9,7 @@
   <style>
     body {
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -18,41 +18,51 @@
       color: #fff;
       font-family: 'Inter', sans-serif;
       text-align: center;
+      padding: 16px;
+      box-sizing: border-box;
     }
+
     h1 {
       font-weight: 300;
-      font-size: clamp(28px,6vw,56px);
+      font-size: clamp(28px, 6vw, 56px);
       margin: 0;
     }
+
     p.subtitle {
       margin: 12px 0 36px;
-      font-size: 14px;
+      font-size: clamp(12px, 2.5vw, 16px);
       font-weight: 300;
     }
+
     p.subtitle a {
       color: rgba(255,255,255,0.7);
       text-decoration: none;
       transition: color 0.2s ease;
     }
+
     p.subtitle a:hover {
       color: #fff;
     }
+
     .links {
       display: flex;
-      flex-direction: row;
-      gap: 16px;
+      flex-wrap: wrap;
+      gap: 12px;
       justify-content: center;
       align-items: center;
     }
+
     .links a {
       color: #fff;
       text-decoration: none;
-      padding: 12px 24px;
+      padding: clamp(8px, 2vw, 16px) clamp(16px, 4vw, 32px);
       border: 1px solid rgba(255,255,255,0.2);
       border-radius: 12px;
       font-weight: 500;
+      font-size: clamp(12px, 2vw, 16px);
       transition: all 0.2s ease;
     }
+
     .links a:hover {
       border-color: #fff;
       transform: translateY(-3px);
